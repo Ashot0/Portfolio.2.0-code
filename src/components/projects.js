@@ -90,7 +90,7 @@ const projects = [
 		img: portfolio,
 		description: 'My portfolio',
 		tags: ['Vue', 'VueX', 'GSAP', 'Three.js'],
-		code: 'https://github.com/Ashot0/Danganronpa-code',
+		code: 'https://github.com/Ashot0/Portfolio.2.0-code',
 		live: 'https://ashot0.github.io/Portfolio.2.0-public/#/',
 	},
 ];
