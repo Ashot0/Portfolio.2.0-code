@@ -2,9 +2,7 @@
 	<div class="home">
 		<Loader />
 		<Hero />
-		<!-- <Works /> -->
 		<WorksBox />
-		<!-- <Test /> -->
 		<Footer />
 	</div>
 </template>
@@ -41,6 +39,5 @@ export default {
 	background-color: #1f261f;
 	overflow: hidden;
 	width: 100vw;
-	// padding-bottom: 200vh;
 }
 </style>

@@ -15,14 +15,14 @@
 					>{{ tag + ' ' }}
 				</span>
 			</span>
-		</div>
+		</div> 
 		<div class="project__btn-box">
-			<button @click="openLinkLive" class="project__btn" role="link">
-				<p >Live</p>
-			</button>
-			<button v-if="$props.project.code" @click="openLinkCode" class="project__btn" role="link">
-				<p >Code</p>
-			</button>
+			<a :href="$props.project.live" target="_blank" class="project__link" role="link">
+				<span >Live</span>
+			</a>
+			<a v-if="$props.project.code" :href="$props.project.code" target="_blank" class="project__link" role="link">
+				<span >Code</span>
+			</a>
 		</div>
 	</div>
 </template>
@@ -42,17 +42,10 @@ export default {
 	},
 	setup(props) {
 		const projectWrapper = ref(null);
-		const openLinkLive = () => {
-			window.open(props.project.live, '_blank');
-		}
-		const openLinkCode = () => {
-			window.open(props.project.code, '_blank');
-		}
-
 		onMounted(() => {
 			console.log(props.project.live);
 		});
-		return { projectWrapper, openLinkLive, openLinkCode };
+		return { projectWrapper };
 	},
 };
 </script>
@@ -172,11 +165,9 @@ export default {
 		align-items: center;
 		z-index: 8;
 	}
-	&__btn {
-		a{
+	&__link {
 			color: rgb(255, 255, 255);
 			text-decoration: none;
-		}
 		padding: 0.6em 2em;
 		border: none;
 		outline: none;

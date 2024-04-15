@@ -77,13 +77,15 @@ export default {
 			});
 
 			parallax.value.addEventListener('mouseleave', () => {
-				gsap.to('.parallax__wrapper', {
-					duration: 1,
-					rotationX: 0,
-					rotationY: 0,
-					transformPerspective: 500,
-					ease: 'power2.out',
-				});
+				setTimeout(() => {
+					gsap.to('.parallax__wrapper', {
+						duration: 8,
+						rotationX: 0,
+						rotationY: 0,
+						transformPerspective: 500,
+						ease: 'power2.out',
+					});
+				}, 50000);
 			});
 		});
 		return { parallax };
@@ -137,8 +139,8 @@ export default {
 
 .parallax {
 	position: relative;
-	pointer-events: none;
 	&__wrapper {
+		pointer-events: none;
 		overflow: hidden;
 		display: flex;
 		justify-content: center;
@@ -146,6 +148,7 @@ export default {
 		transform-origin: center;
 		height: 100vh;
 		width: 100vw;
+		position: absolute;
 	}
 	&__img {
 		position: absolute;

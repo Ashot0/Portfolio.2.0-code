@@ -119,16 +119,12 @@ export default {
 		left: 50%;
 		top: 50%;
 	}
-	.works__sun,
-	.works__orbit,
-	.works__project {
+	&__sun {
 		top: 50%;
 		transform-style: preserve-3d;
-	}
-	&__sun {
 		width: 2em;
 		height: 2em;
-		margin-top: -1em;
+		margin-top: -1.5em;
 		margin-left: -1em;
 		font-size: 25em; //
 		background: linear-gradient(
@@ -140,12 +136,15 @@ export default {
 		transform: rotateX(-90deg);
 	}
 	&__orbit {
+		top: 50%;
+		transform-style: preserve-3d;
 		width: 24em;
 		height: 24em;
-		margin-top: -12em;
+		margin-top: -30em;
 		margin-left: -12em;
 	}
 	&__project {
+		transform-style: preserve-3d;
 		transform: translate(0, -50%);
 		position: relative;
 		text-align: center;

@@ -1,4 +1,3 @@
-import firstImage from '../assets/Projects/1.jpg';
 import solana from '../assets/Projects/solana.png';
 import profcom from '../assets/Projects/profcom.png';
 import alexCasino from '../assets/Projects/alex-casino.png';

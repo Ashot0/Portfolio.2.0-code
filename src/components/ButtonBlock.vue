@@ -99,7 +99,7 @@ export default {
 		&__button {
 		}
 		&__dot {
-			width: 35px;
+			width: 34px;
 			z-index: 25;
 		}
 	}

@@ -75,7 +75,7 @@ export default {
 	&__button {
 	}
 	&__dot {
-		width: 35px;
+		width: 34px;
 		z-index: 25;
 	}
 }
@@ -83,20 +83,9 @@ export default {
 	.right-block {
 		position: static;
 		flex-direction: row;
-		align-items: center;
-		justify-content: space-evenly;
 		margin-top: 15vh;
-		top: 0;
 		right: 0vw;
 		width: 90vw;
-		top: 10vh;
-		height: 80vh;
-		&__button {
-		}
-		&__dot {
-			width: 35px;
-			z-index: 25;
-		}
 	}
 }
 </style>
