@@ -96,21 +96,3 @@ const projects = [
 ];
 
 export default projects;
-
-// 'HTML',
-// 	'SCSS',
-// 	'JavaScript',
-// 	'BEM',
-// 	'React',
-// 	'Framer Motion',
-// 	'React-spring',
-// 	'Swiper.js',
-// 	'Vite',
-// 	'Zustand',
-// 	'CDN',
-// 	'TypeScript',
-// 	'Axios',
-// 	'Vue',
-// 	'VueX',
-// 	'GSAP',
-// 	'Three.js';

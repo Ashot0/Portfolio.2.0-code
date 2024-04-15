@@ -12,7 +12,7 @@
 				</p>
 			</div>
 			<div class="footer__text-container footer__text-container_3">
-				<p class="footer__text">A GOOD JOB</p>
+				<p class="footer__text">A JOB</p>
 			</div>
 		</div>
 		<ButtonBlock />
@@ -105,7 +105,7 @@ export default {
 			transform: translate(-50%);
 		}
 		&_3 {
-			width: 660.36px;
+			width: 304.31px;
 			left: 50vw;
 			transform: translate(-50%);
 		}

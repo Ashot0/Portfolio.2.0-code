@@ -17,11 +17,11 @@
 			</span>
 		</div>
 		<div class="project__btn-box">
-			<button class="project__btn" role="link">
-				<a :href="$props.project.live" target="_blank">Live</a>
+			<button @click="openLinkLive" class="project__btn" role="link">
+				<p >Live</p>
 			</button>
-			<button v-if="$props.project.code" class="project__btn" role="link">
-				<a :href="$props.project.code" target="_blank">Code</a>
+			<button v-if="$props.project.code" @click="openLinkCode" class="project__btn" role="link">
+				<p >Code</p>
 			</button>
 		</div>
 	</div>
@@ -42,10 +42,17 @@ export default {
 	},
 	setup(props) {
 		const projectWrapper = ref(null);
+		const openLinkLive = () => {
+			window.open(props.project.live, '_blank');
+		}
+		const openLinkCode = () => {
+			window.open(props.project.code, '_blank');
+		}
+
 		onMounted(() => {
 			console.log(props.project.live);
 		});
-		return { projectWrapper };
+		return { projectWrapper, openLinkLive, openLinkCode };
 	},
 };
 </script>
@@ -232,12 +239,3 @@ export default {
 }
 </style>
 
-<!-- #ff0000,
-				#ff7300,
-				#fffb00,
-				#48ff00,
-				#00ffd5,
-				#002bff,
-				#7a00ff,
-				#ff00c8,
-				#ff0000 -->
