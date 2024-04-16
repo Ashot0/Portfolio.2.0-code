@@ -186,13 +186,13 @@ export default {
 		}
 	}
 }
-@media (orientation: portrait) {
+@media (max-width: 1120px) {
 	.parallax {
 		&__text-block {
 			gap: 0%;
 		}
 		&__text {
-			height: 10vh;
+			height: 20vh;
 			flex-direction: column;
 			font-size: 10vw;
 			&_1 {

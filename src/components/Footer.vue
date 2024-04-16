@@ -72,7 +72,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	padding-bottom: 200px;
 	&__wrapper {
 		position: relative;
 		width: 100vw;
@@ -126,6 +126,7 @@ export default {
 }
 @media (orientation: portrait) {
 	.footer {
+		padding-bottom: 0;
 		&__wrapper {
 			gap: 0%;
 		}

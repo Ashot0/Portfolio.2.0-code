@@ -95,6 +95,7 @@ export default {
 @media (orientation: portrait) {
 	.bottom-block {
 		width: 90vw;
+		height: 100px;
 		&__dot {
 			width: 14px;
 			z-index: 25;
