@@ -72,7 +72,7 @@ export default {
 	height: 100vh;
 	font-size: 10vw;
 	color: white;
-	z-index: 90;
+	z-index: 60;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -101,7 +101,7 @@ export default {
 		}
 		&_2 {
 			width: 229.05px;
-			left: 50vw;
+			left: calc(50vw + 6px);
 			transform: translate(-50%);
 		}
 		&_3 {

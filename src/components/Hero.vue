@@ -96,7 +96,7 @@ export default {
 .hero {
 	z-index: 10;
 	position: relative;
-	height: 160vh;
+	height: 130vh;
 	width: 100vw;
 	display: flex;
 	justify-content: center;

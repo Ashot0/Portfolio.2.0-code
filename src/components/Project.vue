@@ -21,7 +21,7 @@
 				<span >Live</span>
 			</a>
 			<a v-if="$props.project.code" :href="$props.project.code" target="_blank" class="project__link" role="link">
-				<span >Code</span>
+				<span >Github</span>
 			</a>
 		</div>
 	</div>
@@ -63,7 +63,9 @@ export default {
 		background-color: rgba(76, 140, 65, 0.6);
 		width: 320px;
 		padding: 20px;
+		max-height: 700px;
 		height: 60vh;
+		min-height: 500px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -158,6 +160,7 @@ export default {
 		}
 	}
 	&__btn-box {
+		backface-visibility: hidden;
 		width: 100%;
 		position: relative;
 		display: flex;
@@ -226,6 +229,13 @@ export default {
 	}
 	100% {
 		background-position: 0 0;
+	}
+}
+@media (orientation: portrait) {
+	.project {
+		&__wrapper {
+			max-height: 500px;
+		}
 	}
 }
 </style>

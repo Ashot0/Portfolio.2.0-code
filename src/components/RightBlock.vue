@@ -83,9 +83,13 @@ export default {
 	.right-block {
 		position: static;
 		flex-direction: row;
-		margin-top: 15vh;
+		margin-top: 45vh;
 		right: 0vw;
 		width: 90vw;
+		&__dot {
+			width: 14px;
+			z-index: 25;
+		}
 	}
 }
 </style>

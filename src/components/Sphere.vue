@@ -10,7 +10,7 @@
 <script>
 import { ref, onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
-import textureImg from '../assets/Textures/planet.jpg';
+import textureImg from '../assets/Textures/5.jpg';
 
 export default {
 	setup() {
@@ -26,7 +26,7 @@ export default {
 
 		onUnmounted(() => {
 			// Убрать следующую строку
-			// window.removeEventListener('resize', onWindowResize);
+			window.removeEventListener('resize', onWindowResize);
 			if (renderer) {
 				renderer.dispose();
 			}

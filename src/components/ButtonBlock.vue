@@ -74,32 +74,21 @@ export default {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	bottom: 0;
+	bottom: -20vh;
 	width: 80vw;
 	height: 200px;
 	&__button {
 	}
 	&__dot {
-		width: 35px;
+		width: 34px;
 		z-index: 25;
 	}
 }
 @media (orientation: portrait) {
-	.right-block {
-		position: static;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-evenly;
-		margin-top: 15vh;
-		top: 0;
-		right: 0vw;
+	.bottom-block {
 		width: 90vw;
-		top: 10vh;
-		height: 80vh;
-		&__button {
-		}
 		&__dot {
-			width: 34px;
+			width: 14px;
 			z-index: 25;
 		}
 	}

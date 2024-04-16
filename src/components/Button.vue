@@ -36,11 +36,23 @@ export default {
 	width: 102px;
 	height: 102px;
 	border-radius: 50%;
+	position: relative;
 	&__icon {
 		position: relative;
 		border-radius: 4px;
 		width: 50px;
 		height: 50px;
+	}
+}
+@media (orientation: portrait) {
+	.button {
+		width: 62px;
+		height: 62px;
+		min-width: 62px;
+		&__icon {
+			width: 25px;
+			height: 25px;
+		}
 	}
 }
 </style>

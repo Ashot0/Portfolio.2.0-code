@@ -5,14 +5,6 @@
 			<div v-for="(project, index) in projects" class="works__orbit">
 				<Project class="works__project" :key="index" :project="project" />
 			</div>
-			<!-- <div class="works__orbit">
-				<Project
-					class="works__project"
-					v-for="(project, index) in projects"
-					:key="index"
-					:project="project"
-				/>
-			</div> -->
 		</div>
 	</div>
 </template>
@@ -44,8 +36,8 @@ export default {
 				{
 					scrollTrigger: {
 						trigger: '.works__wrapper',
-						start: 'top center',
-						end: 'top -1000vh',
+						start: '-147% top',
+						end: 'top -2000vh',
 						scrub: 3,
 						pin: true,
 					},
@@ -79,9 +71,9 @@ export default {
 					},
 					{
 						scrollTrigger: {
-							trigger: '.works__orbit',
-							start: 'center center',
-							end: 'top -1800vh',
+							trigger: '.works',
+							start: 'top top',
+							end: 'bottom bottom',
 							scrub: true,
 						},
 						duration: 120,
@@ -100,12 +92,13 @@ export default {
 <style lang="scss">
 .works {
 	left: 0;
-	padding-top: 10vh;
+	padding-top: 20vh;
 	position: relative;
 	width: 100vw;
-	height: 300vh;
-	overflow: hidden;
+	height: 457vh;
+	// overflow: hidden;
 	&__wrapper {
+		z-index: 90;
 		position: relative;
 		width: 100%;
 		height: 100vh;
@@ -113,18 +106,18 @@ export default {
 		transform: rotateX(75deg);
 	}
 	.works__sun,
-	.works__orbit {
-		position: absolute;
-		border-radius: 50%;
-		left: 50%;
-		top: 50%;
+	.works__orbit,
+	.works__project {
 	}
 	&__sun {
+		position: absolute;
+		border-radius: 50%;
 		top: 50%;
+		left: 50%;
 		transform-style: preserve-3d;
 		width: 2em;
 		height: 2em;
-		margin-top: -1.5em;
+		margin-top: -1em;
 		margin-left: -1em;
 		font-size: 25em; //
 		background: linear-gradient(
@@ -136,7 +129,10 @@ export default {
 		transform: rotateX(-90deg);
 	}
 	&__orbit {
+		position: absolute;
+		border-radius: 50%;
 		top: 50%;
+		left: 50%;
 		transform-style: preserve-3d;
 		width: 24em;
 		height: 24em;
@@ -155,7 +151,10 @@ export default {
 @media (orientation: portrait) {
 	.works {
 		&__project {
-			margin-left: -20vh;
+			margin-left: -15vh;
+		}
+		&__sun {
+			font-size: 20em;
 		}
 	}
 }

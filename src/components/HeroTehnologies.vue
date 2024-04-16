@@ -8,9 +8,9 @@
 			<span class="technologies__element technologies__element_react"
 				>React</span
 			>
-			<span class="technologies__element technologies__element_ts"
-				>TypeScript</span
-			>
+			<span class="technologies__element technologies__element_ts">
+				TypeScript
+			</span>
 			<span class="technologies__element technologies__element_gsap">GSAP</span>
 			<span class="technologies__element technologies__element_scss">SCSS</span>
 		</p>
@@ -117,16 +117,18 @@ export default {
 }
 @media (orientation: portrait) {
 	.technologies {
+		font-size: 5vw;
+		text-align: center;
 		&__header-wrapper {
-			text-align: center;
-			height: 150px;
+			height: 5vw;
 		}
 		&__list {
-			margin-top: 50px;
+			// margin-top: 50px;
 			text-align: center;
-			height: 370px;
-			flex-direction: column;
-			gap: 0px;
+			height: 7vw;
+
+			// flex-direction: column;
+			gap: 2vw;
 		}
 	}
 }
