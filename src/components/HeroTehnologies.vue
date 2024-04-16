@@ -18,12 +18,11 @@
 </template>
 
 <script>
-import { ref, onMounted, computed } from 'vue';
+import { onMounted } from 'vue';
 import gsap from 'gsap';
 export default {
 	setup() {
 		onMounted(() => {
-			const tl = gsap.timeline();
 			gsap.fromTo(
 				'.technologies__header',
 				{
@@ -98,8 +97,6 @@ export default {
 		height: 100px;
 		overflow: hidden;
 	}
-	&__header {
-	}
 	&__header-wrapper {
 		position: absolute;
 		overflow: hidden;
@@ -123,11 +120,8 @@ export default {
 			height: 5vw;
 		}
 		&__list {
-			// margin-top: 50px;
 			text-align: center;
 			height: 7vw;
-
-			// flex-direction: column;
 			gap: 2vw;
 		}
 	}

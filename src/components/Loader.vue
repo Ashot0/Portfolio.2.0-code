@@ -58,9 +58,6 @@ export default {
 }
 @media (orientation: portrait) {
 	.loader {
-		&__wrapper {
-		}
-
 		width: 100px;
 		height: 100px;
 	}

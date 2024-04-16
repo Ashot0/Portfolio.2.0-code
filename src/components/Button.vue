@@ -1,6 +1,6 @@
 <template>
 	<button @click="openLink" class="button" type="button">
-		<img class="button__icon" :src="icon" alt="" />
+		<img class="button__icon" :src="icon" alt="button__icon" />
 	</button>
 </template>
 

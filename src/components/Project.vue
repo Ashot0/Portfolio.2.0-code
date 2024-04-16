@@ -43,7 +43,6 @@ export default {
 	setup(props) {
 		const projectWrapper = ref(null);
 		onMounted(() => {
-			console.log(props.project.live);
 		});
 		return { projectWrapper };
 	},
@@ -71,7 +70,6 @@ export default {
 		justify-content: space-around;
 		align-items: center;
 	}
-
 	&__image {
 		backface-visibility: hidden;
 		object-fit: cover;
@@ -80,7 +78,6 @@ export default {
 		height: 160px;
 		overflow: hidden;
 	}
-
 	&__text-box {
 		backface-visibility: hidden;
 		font-size: 1rem;
@@ -90,15 +87,10 @@ export default {
 	&__name{
 		font-size: 1.5rem;
 		padding: 10px 0;
-
 	}
-
 	&__description {
 		display: flex;
 		flex-direction: column;
-	}
-
-	&__tags {
 	}
 	&__tag {
 		font-size: 1.5rem;
@@ -198,7 +190,6 @@ export default {
 		}
 		&:active {
 			color: #00000000;
-
 			&::after {
 				background: transparent;
 			}
@@ -219,7 +210,6 @@ export default {
 		}
 	}
 }
-
 @keyframes glowingbn5 {
 	0% {
 		background-position: 0 0;

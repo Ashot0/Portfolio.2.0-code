@@ -3,16 +3,16 @@
 		<SolarSystem class="footer__solar-system" />
 		<div class="footer__wrapper">
 			<div class="footer__text-container footer__text-container_1">
-				<p class="footer__text">LOOKING</p>
+				<h1 class="footer__text">LOOKING</h1>
 			</div>
 			<div class="footer__text-container footer__text-container_2">
-				<p class="footer__text">
+				<h2 class="footer__text">
 					F<span class="footer__text_pc">   </span
 					><span class="footer__text_phone">O</span>R
-				</p>
+				</h2>
 			</div>
 			<div class="footer__text-container footer__text-container_3">
-				<p class="footer__text">A JOB</p>
+				<h2 class="footer__text">A JOB</h2>
 			</div>
 		</div>
 		<ButtonBlock />
@@ -20,13 +20,12 @@
 </template>
 
 <script>
-import { ref, onMounted, computed } from 'vue';
+import { onMounted } from 'vue';
 import AnimatedText from '../components/AnimatedText.vue';
 import SolarSystem from '../components/SolarSystem.vue';
 import Button from '../components/Button.vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useStore } from 'vuex';
 import ButtonBlock from './ButtonBlock.vue';
 gsap.registerPlugin(ScrollTrigger);
 export default {
@@ -36,9 +35,6 @@ export default {
 		SolarSystem,
 		ButtonBlock,
 	},
-	//
-
-	//
 	setup() {
 		onMounted(() => {
 			gsap.fromTo(
@@ -76,6 +72,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	&__wrapper {
 		position: relative;
 		width: 100vw;

@@ -24,14 +24,13 @@
 </template>
 
 <script>
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted } from 'vue';
 import AnimatedText from '../components/AnimatedText.vue';
 import Button from '../components/Button.vue';
 import HeroTehnologies from '../components/HeroTehnologies.vue';
 import RightBlock from '../components/RightBlock.vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useStore } from 'vuex';
 export default {
 	components: {
 		AnimatedText,
@@ -141,7 +140,6 @@ export default {
 	position: relative;
 	&__wrapper {
 		pointer-events: none;
-		overflow: hidden;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -196,7 +194,6 @@ export default {
 		&__text {
 			height: 10vh;
 			flex-direction: column;
-
 			font-size: 10vw;
 			&_1 {
 				left: 10vw;

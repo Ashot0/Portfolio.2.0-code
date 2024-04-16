@@ -14,7 +14,6 @@ import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap';
 import { CSSPlugin } from 'gsap/CSSPlugin';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Sphere from '../components/Sphere.vue';
 import Project from './Project.vue';
 import projects from './projects.js';
 gsap.registerPlugin(CSSPlugin);
@@ -22,7 +21,6 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
 	components: {
 		Project,
-		Sphere,
 	},
 	setup() {
 		const container = ref(null);
@@ -31,17 +29,17 @@ export default {
 			gsap.fromTo(
 				'.works__wrapper',
 				{
-					top: '0%',
+					position: 'relative',
 				},
 				{
 					scrollTrigger: {
-						trigger: '.works__wrapper',
-						start: '-147% top',
-						end: 'top -2000vh',
+						trigger: '.works',
+						start: 'top -200px',
+						end: 'bottom bottom',
 						scrub: 3,
 						pin: true,
 					},
-					top: '0%',
+					position: 'fixed',
 					duration: 10,
 					ease: 'linear',
 				}
@@ -96,7 +94,6 @@ export default {
 	position: relative;
 	width: 100vw;
 	height: 457vh;
-	// overflow: hidden;
 	&__wrapper {
 		z-index: 90;
 		position: relative;
@@ -104,10 +101,6 @@ export default {
 		height: 100vh;
 		transform-style: preserve-3d;
 		transform: rotateX(75deg);
-	}
-	.works__sun,
-	.works__orbit,
-	.works__project {
 	}
 	&__sun {
 		position: absolute;

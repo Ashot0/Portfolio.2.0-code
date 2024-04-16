@@ -58,8 +58,6 @@ export default {
 			container.value.appendChild(renderer.domElement);
 			scene.background = new THREE.Color(0x000000);
 
-			// const texture = new THREE.TextureLoader().load('путь_к_файлу_с_текстурой');
-			// scene.background = texture;
 			window.addEventListener('resize', onWindowResize);
 		}
 

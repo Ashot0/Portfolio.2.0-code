@@ -5,19 +5,31 @@
 			:link="'https://www.linkedin.com/in/illia-golovan-816a14269/'"
 			:icon="require('@/assets/icons/1.png')"
 		/>
-		<img class="bottom-block__dot" src="@/assets/icons/dot.png" alt="" />
+		<img
+			class="bottom-block__dot"
+			src="@/assets/icons/dot.png"
+			alt="bottom-block__dot"
+		/>
 		<Button
 			class="bottom-block__button"
 			:link="'https://github.com/Ashot0'"
 			:icon="require('@/assets/icons/2.png')"
 		/>
-		<img class="bottom-block__dot" src="@/assets/icons/dot.png" alt="" />
+		<img
+			class="bottom-block__dot"
+			src="@/assets/icons/dot.png"
+			alt="bottom-block__dot"
+		/>
 		<Button
 			class="bottom-block__button"
 			:link="'https://t.me/Ashot_69'"
 			:icon="require('@/assets/icons/3.png')"
 		/>
-		<img class="bottom-block__dot" src="@/assets/icons/dot.png" alt="" />
+		<img
+			class="bottom-block__dot"
+			src="@/assets/icons/dot.png"
+			alt="bottom-block__dot"
+		/>
 		<Button
 			class="bottom-block__button"
 			:link="'mailto:ilia.holovan@gmail.com'"
@@ -27,10 +39,9 @@
 </template>
 
 <script>
-import { ref, onMounted, computed } from 'vue';
+import { onMounted, computed } from 'vue';
 import Button from '../components/Button.vue';
 import { gsap } from 'gsap';
-import { useStore } from 'vuex';
 export default {
 	components: {
 		Button,
@@ -61,7 +72,6 @@ export default {
 				}
 			);
 		});
-
 		return { isLoading, setIsLoading };
 	},
 };
@@ -77,8 +87,6 @@ export default {
 	bottom: -20vh;
 	width: 80vw;
 	height: 200px;
-	&__button {
-	}
 	&__dot {
 		width: 34px;
 		z-index: 25;

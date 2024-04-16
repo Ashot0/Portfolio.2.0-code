@@ -1,5 +1,5 @@
 <template>
-	<div ref="textRef" class="text-container">
+	<div ref="textRef" class="text__wrapper">
 		<p class="text">{{ text }}</p>
 	</div>
 </template>
@@ -33,7 +33,7 @@ export default {
 						textRef.value,
 						{
 							scrollTrigger: {
-								trigger: '.footer__text',
+								trigger: '.text__wrapper',
 								start: 'top center',
 								end: 'bottom center',
 							},
@@ -50,7 +50,6 @@ export default {
 				}, 3000);
 			}
 		});
-
 		return {
 			textRef,
 			isLoading,
@@ -59,19 +58,18 @@ export default {
 };
 </script>
 
-<style scoped>
-.text-container {
-	text-wrap: nowrap;
-	opacity: 0;
-	width: 100%;
-	height: 120px;
-	overflow: hidden;
-	font-family: 'Merriweather', serif;
-	font-style: normal;
-	position: relative;
-}
-
+<style lang="scss" scoped>
 .text {
+	&__wrapper {
+		text-wrap: nowrap;
+		opacity: 0;
+		width: 100%;
+		height: 120px;
+		overflow: hidden;
+		font-family: 'Merriweather', serif;
+		font-style: normal;
+		position: relative;
+	}
 	display: block;
 	height: 120px;
 	color: white;

@@ -13,7 +13,6 @@ import Hero from '../components/Hero.vue';
 import Footer from '../components/Footer.vue';
 import Loader from '../components/Loader.vue';
 import WorksBox from '../components/WorksBox.vue';
-import gsap from 'gsap';
 export default {
 	name: 'HomeView',
 	components: {
@@ -30,14 +29,21 @@ export default {
 };
 </script>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 ::-webkit-scrollbar {
 	display: none;
 	background-color: inherit;
+}
+h1,
+h2 {
+	font-weight: normal;
+	font-size: 16px;
 }
 .home {
 	background-color: #1f261f;
 	overflow: hidden;
 	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	gap: 20vh;
 }
 </style>
