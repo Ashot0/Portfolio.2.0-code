@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import { onMounted, computed } from 'vue';
+import { useStore } from 'vuex';
 import AnimatedText from '../components/AnimatedText.vue';
 import Hero from '../components/Hero.vue';
 import Footer from '../components/Footer.vue';
@@ -24,6 +26,17 @@ export default {
 	},
 
 	setup(props) {
+		const store = useStore();
+
+		const isLoading = computed(() => store.getters.checkLoading);
+
+		if (isLoading) {
+			onMounted(() => {
+				setTimeout(() => {
+					window.scrollTo(0, 0);
+				}, 300);
+			});
+		}
 		return {};
 	},
 };
