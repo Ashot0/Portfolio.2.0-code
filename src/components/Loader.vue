@@ -15,12 +15,14 @@ export default {
 			store.dispatch('setIsLoading', true);
 		};
 		window.addEventListener('load', () => {
-			gsap.to('.loader__wrapper', {
-				height: '0%',
-				top: '-200%',
-				duration: 2,
-			});
-			setIsLoading();
+			setTimeout(() => {
+				gsap.to('.loader__wrapper', {
+					height: '0%',
+					top: '-200%',
+					duration: 2,
+				});
+				setIsLoading();
+			}, 400);
 		});
 		return {};
 	},
