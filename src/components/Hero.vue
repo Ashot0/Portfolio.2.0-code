@@ -189,10 +189,10 @@ export default {
 @media (max-width: 1120px) {
 	.parallax {
 		&__text-block {
-			gap: 0%;
+			gap: 3%;
 		}
 		&__text {
-			height: 20vh;
+			height: 10vw;
 			flex-direction: column;
 			font-size: 10vw;
 			&_1 {
