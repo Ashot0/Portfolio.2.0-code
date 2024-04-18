@@ -112,7 +112,7 @@ export default {
 		position: absolute;
 		top: 5vh;
 		left: 2vw;
-		width: 100px;
+		width: 7.5vw;
 		object-fit: cover;
 		opacity: 0.6;
 		filter: drop-shadow(0px 0px 4px #75c768ff);
@@ -183,6 +183,17 @@ export default {
 		&_3 {
 			position: relative;
 			left: calc(50vw - 150px);
+		}
+	}
+}
+
+@media (orientation: portrait) {
+	.hero {
+		&__header {
+			position: absolute;
+			top: 5vh;
+			left: 2vw;
+			width: 10vh;
 		}
 	}
 }

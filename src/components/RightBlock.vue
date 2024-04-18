@@ -100,4 +100,17 @@ export default {
 		}
 	}
 }
+@media (max-height: 600px) {
+	.right-block {
+		position: static;
+		flex-direction: row;
+		margin-top: 45vh;
+		right: 0vw;
+		width: 90vw;
+		&__dot {
+			width: 14px;
+			z-index: 25;
+		}
+	}
+}
 </style>

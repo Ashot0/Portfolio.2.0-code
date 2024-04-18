@@ -151,4 +151,24 @@ export default {
 		}
 	}
 }
+@media (max-height: 520px) {
+	.works {
+		margin-top: 50vh;
+		margin-bottom: 100vh;
+	}
+}
+@media (min-width: 1720px) {
+	.works {
+		&__project {
+			margin-left: 25vh;
+			left: 190%;
+		}
+		&__orbit {
+			margin-top: -50em;
+		}
+		&__sun {
+			font-size: 30em;
+		}
+	}
+}
 </style>

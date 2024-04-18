@@ -117,7 +117,21 @@ export default {
 		font-size: 5vw;
 		text-align: center;
 		&__header-wrapper {
-			height: 5vw;
+			height: 7vw;
+		}
+		&__list {
+			text-align: center;
+			height: 7vw;
+			gap: 2vw;
+		}
+	}
+}
+@media (max-height: 600px) {
+	.technologies {
+		font-size: 5vw;
+		text-align: center;
+		&__header-wrapper {
+			height: 7vw;
 		}
 		&__list {
 			text-align: center;

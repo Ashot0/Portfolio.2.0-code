@@ -86,7 +86,8 @@ export default {
 	justify-content: space-evenly;
 	bottom: -20vh;
 	width: 80vw;
-	height: 200px;
+	max-width: 900px;
+	height: 150px;
 	&__dot {
 		width: 34px;
 		z-index: 25;

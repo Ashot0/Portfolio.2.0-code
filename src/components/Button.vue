@@ -21,9 +21,6 @@ export default {
 		background-color: #4c8c41ff;
 	}
 	&:active {
-		margin: 2px;
-		width: 98px;
-		height: 98px;
 		.button__icon {
 			width: 48px;
 			height: 48px;
@@ -35,6 +32,8 @@ export default {
 	background-color: #75c768;
 	width: 102px;
 	height: 102px;
+	min-height: 102px;
+	min-width: 102px;
 	border-radius: 50%;
 	position: relative;
 	&__icon {
@@ -49,9 +48,16 @@ export default {
 		width: 62px;
 		height: 62px;
 		min-width: 62px;
+		min-height: 62px;
 		&__icon {
 			width: 25px;
 			height: 25px;
+		}
+		&:active {
+			.button__icon {
+				width: 23px;
+				height: 23px;
+			}
 		}
 	}
 }

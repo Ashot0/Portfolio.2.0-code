@@ -228,5 +228,31 @@ export default {
 		}
 	}
 }
+@media (min-width: 1720px) {
+	.project {
+		&__wrapper {
+			width:620px;
+		max-height: 800px;
+		min-height: 650px;
+		}
+		&__image {
+		height: 360px;
+		width: 90%;
+	}
+	&__description {
+		font-size: 1.2rem;
+	}
+	&__name{
+		font-size: 2.5rem;
+		padding: 10px 0;
+	}
+	&__tag {
+		font-size: 2rem;
+	}
+	&__link {
+		font-size: 1.6rem;
+	}
+	}
+}
 </style>
 
