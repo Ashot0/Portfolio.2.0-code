@@ -57,9 +57,6 @@
 }
 @media (orientation: portrait) and (max-height: 1340px) {
 	.works {
-		&__sticky {
-			// padding: 0;
-		}
 		&__project {
 			margin-left: -15vh;
 		}
