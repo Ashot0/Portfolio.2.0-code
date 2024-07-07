@@ -40,7 +40,7 @@
 
 <script>
 import { onMounted, computed } from 'vue';
-import Button from '../components/Button.vue';
+import Button from '@/components/Button/Button.vue';
 import { gsap } from 'gsap';
 export default {
 	components: {
@@ -77,30 +77,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.bottom-block {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
-	bottom: -20vh;
-	width: 80vw;
-	max-width: 900px;
-	height: 150px;
-	&__dot {
-		width: 34px;
-		z-index: 25;
-	}
-}
-@media (orientation: portrait) {
-	.bottom-block {
-		width: 90vw;
-		height: 100px;
-		&__dot {
-			width: 14px;
-			z-index: 25;
-		}
-	}
-}
-</style>
+<style lang="scss" scoped src="./bottom-block.scss" />

@@ -40,7 +40,7 @@
 
 <script>
 import { onMounted, computed } from 'vue';
-import Button from '../components/Button.vue';
+import Button from '@/components/Button/Button.vue';
 import { gsap } from 'gsap';
 export default {
 	components: {
@@ -70,47 +70,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.right-block {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	top: 0;
-	right: -20vw;
-	width: 200px;
-	top: 10vh;
-	height: 80vh;
-	&__dot {
-		width: 34px;
-		z-index: 25;
-	}
-}
-@media (orientation: portrait) {
-	.right-block {
-		position: static;
-		flex-direction: row;
-		margin-top: 45vh;
-		right: 0vw;
-		width: 90vw;
-		&__dot {
-			width: 14px;
-			z-index: 25;
-		}
-	}
-}
-@media (max-height: 600px) {
-	.right-block {
-		position: static;
-		flex-direction: row;
-		margin-top: 45vh;
-		right: 0vw;
-		width: 90vw;
-		&__dot {
-			width: 14px;
-			z-index: 25;
-		}
-	}
-}
-</style>
+<style lang="scss" scoped src="./right-block.scss" />

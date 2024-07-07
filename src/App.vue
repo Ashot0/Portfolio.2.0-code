@@ -11,6 +11,5 @@
 }
 html {
 	background-color: #1f261f;
-	scroll-behavior: smooth;
 }
 </style>

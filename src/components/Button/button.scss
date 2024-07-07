@@ -1,21 +1,3 @@
-<template>
-	<button @click="openLink" class="button" type="button">
-		<img class="button__icon" :src="icon" alt="button__icon" />
-	</button>
-</template>
-
-<script>
-export default {
-	props: { icon: String, link: String },
-	methods: {
-		openLink() {
-			window.open(this.link, '_blank');
-		},
-	},
-};
-</script>
-
-<style lang="scss" scoped>
 .button {
 	&:hover {
 		background-color: #4c8c41ff;
@@ -45,6 +27,24 @@ export default {
 }
 @media (orientation: portrait) {
 	.button {
+		width: 82px;
+		height: 82px;
+		min-width: 82px;
+		min-height: 82px;
+		&__icon {
+			width: 45px;
+			height: 45px;
+		}
+		&:active {
+			.button__icon {
+				width: 23px;
+				height: 23px;
+			}
+		}
+	}
+}
+@media (orientation: portrait) and (max-width: 420px) {
+	.button {
 		width: 62px;
 		height: 62px;
 		min-width: 62px;
@@ -61,4 +61,3 @@ export default {
 		}
 	}
 }
-</style>

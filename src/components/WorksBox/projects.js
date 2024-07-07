@@ -1,23 +1,24 @@
-import solana from '../assets/Projects/solana.png';
-import profcom from '../assets/Projects/profcom.png';
-import alexCasino from '../assets/Projects/alex-casino.png';
-import wasteProcessing from '../assets/Projects/waste-processing.png';
-import hlegal from '../assets/Projects/hlegal.png';
-import tobto from '../assets/Projects/tobto.png';
-import dom from '../assets/Projects/dom.png';
-import barMitzvah from '../assets/Projects/bar-mitzvah.png';
-import danganronpa from '../assets/Projects/danganronpa.png';
-import portfolio from '../assets/Projects/portfolio.png';
+import solana from '@/assets/Projects/solana.png';
+import profcom from '@/assets/Projects/profcom.png';
+import alexCasino from '@/assets/Projects/alex-casino.png';
+import wasteProcessing from '@/assets/Projects/waste-processing.png';
+import hlegal from '@/assets/Projects/hlegal.png';
+import tobto from '@/assets/Projects/tobto.png';
+import dom from '@/assets/Projects/dom.png';
+import barMitzvah from '@/assets/Projects/bar-mitzvah.png';
+import danganronpa from '@/assets/Projects/danganronpa.png';
+import portfolio from '@/assets/Projects/portfolio.png';
+import tribalClub from '@/assets/Projects/tribal-club.png';
 
 const projects = [
-	{
-		name: 'SOLANA',
-		img: solana,
-		description: 'SOLANA-main-page',
-		tags: ['HTML', 'SCSS', 'JavaScript', 'BEM'],
-		code: 'https://github.com/Ashot0/Blockchain-site',
-		live: 'https://ashot0.github.io/Blockchain-site/',
-	},
+	// {
+	// 	name: 'SOLANA',
+	// 	img: solana,
+	// 	description: 'SOLANA-main-page',
+	// 	tags: ['HTML', 'SCSS', 'JavaScript', 'BEM'],
+	// 	code: 'https://github.com/Ashot0/Blockchain-site',
+	// 	live: 'https://ashot0.github.io/Blockchain-site/',
+	// },
 	{
 		name: 'NUOP student union',
 		img: profcom,
@@ -83,6 +84,13 @@ const projects = [
 		tags: ['Vue', 'VueX', 'GSAP'],
 		code: 'https://github.com/Ashot0/Danganronpa-code',
 		live: 'https://ashot0.github.io/Danganronpa-public/#/',
+	},
+	{
+		name: 'Tribal Club',
+		img: tribalClub,
+		description: 'Website for Tribal Club',
+		tags: ['Vue', 'GSAP', 'VueX', 'SCSS', 'Axios'],
+		live: 'https://tribalclub.newtribe.nl/#/',
 	},
 	{
 		name: 'Portfolio',

@@ -5,40 +5,24 @@
 <script>
 import { ref, onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
-import sunTexture from '../assets/Textures/sun.jpg';
-import mercuryTexture from '../assets/Textures/1.jpg';
-import venusTexture from '../assets/Textures/2.jpg';
-import earthTexture from '../assets/Textures/3.jpg';
-import marsTexture from '../assets/Textures/4.jpg';
-import jupiterTexture from '../assets/Textures/5.jpg';
-import saturnTexture from '../assets/Textures/6.png';
-import uranusTexture from '../assets/Textures/7.png';
-import neptuneTexture from '../assets/Textures/8.jpg';
-import saturnRingTexture from '../assets/Textures/saturns-ring.jpg';
+import sunTexture from '@/assets/Textures/sun.jpg';
+import mercuryTexture from '@/assets/Textures/1.jpg';
+import venusTexture from '@/assets/Textures/2.jpg';
+import earthTexture from '@/assets/Textures/3.jpg';
+import marsTexture from '@/assets/Textures/4.jpg';
+import jupiterTexture from '@/assets/Textures/5.jpg';
+import saturnTexture from '@/assets/Textures/6.png';
+import uranusTexture from '@/assets/Textures/7.png';
+import neptuneTexture from '@/assets/Textures/8.jpg';
+import saturnRingTexture from '@/assets/Textures/saturns-ring.jpg';
+
 export default {
 	setup() {
-		let container = ref(null);
+		const container = ref(null);
 		let camera, scene, renderer;
 		let sun,
-			earth,
 			planets = [];
 		let angle = 0;
-
-		onMounted(() => {
-			init();
-			createSun();
-			createPlanets();
-			animate();
-		});
-
-		onUnmounted(() => {
-			renderer.dispose();
-			camera = null;
-			scene = null;
-			renderer = null;
-			sun = null;
-			planets = null;
-		});
 
 		function init() {
 			camera = new THREE.PerspectiveCamera(
@@ -153,7 +137,6 @@ export default {
 				}
 
 				scene.background = new THREE.Color(0x1f261f);
-
 				planets.push({ planet, speed: planetInfo.speed });
 				scene.add(planet);
 			});
@@ -161,10 +144,9 @@ export default {
 
 		function animate() {
 			requestAnimationFrame(animate);
-
 			angle -= 0.01;
 
-			if (planets && planets.length > 0) {
+			if (planets.length > 0) {
 				planets.forEach((planetObj, index) => {
 					const { planet, speed } = planetObj;
 					const distance = index + 3;
@@ -179,24 +161,36 @@ export default {
 		}
 
 		function render() {
-			if (renderer) {
-				renderer.render(scene, camera);
-			}
+			if (renderer) renderer.render(scene, camera);
 		}
+
 		function onWindowResize() {
 			camera.aspect = window.innerWidth / window.innerHeight;
 			camera.updateProjectionMatrix();
 			renderer.setSize(window.innerWidth, window.innerHeight);
 		}
 
+		onMounted(() => {
+			window.onload = () => {
+				init();
+				createSun();
+				createPlanets();
+				animate();
+			};
+		});
+
+		onUnmounted(() => {
+			if (renderer) renderer.dispose();
+			camera = null;
+			scene = null;
+			renderer = null;
+			sun = null;
+			planets = null;
+		});
+
 		return { container };
 	},
 };
 </script>
 
-<style>
-.solar-system-container {
-	width: 100vw;
-	height: 100vh;
-}
-</style>
+<style lang="scss" scoped src="./solar-system.scss" />
