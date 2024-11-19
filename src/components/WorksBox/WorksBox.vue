@@ -54,7 +54,8 @@ export default {
 					{
 						scrollTrigger: {
 							trigger: '.works',
-							start: 'top top',
+
+							start: 'top -25%',
 							end: 'bottom bottom',
 							scrub: true,
 						},

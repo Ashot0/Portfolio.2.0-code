@@ -9,6 +9,10 @@ import barMitzvah from '@/assets/Projects/bar-mitzvah.png';
 import danganronpa from '@/assets/Projects/danganronpa.png';
 import portfolio from '@/assets/Projects/portfolio.png';
 import tribalClub from '@/assets/Projects/tribal-club.png';
+import HetHaartheter from '@/assets/Projects/HetHaartheater.jpg';
+import dzencode from '@/assets/Projects/dzencode.jpg';
+import weather from '@/assets/Projects/weather.jpg';
+import Chuttyevo from '@/assets/Projects/chuttevo.jpg';
 
 const projects = [
 	// {
@@ -27,30 +31,38 @@ const projects = [
 		code: 'https://github.com/Ashot0/profcom',
 		live: 'https://ashot0.github.io/profcom/',
 	},
-	{
-		name: 'Waste-Processing',
-		img: wasteProcessing,
-		description: 'Website about the importance of recycling',
-		tags: ['HTML', 'SCSS', 'JavaScript', 'BEM', 'Swiper.js'],
-		code: 'https://github.com/Ashot0/Waste-Processing',
-		live: 'https://ashot0.github.io/Waste-Processing/#',
-	},
-	{
-		name: 'ALEX-casino',
-		img: alexCasino,
-		description: 'Landing-page casino',
-		tags: ['React', 'Framer Motion', 'React-spring', 'BEM', 'Swiper.js'],
-		code: 'https://github.com/Ashot0/ALEX-casino',
-		live: 'https://ashot0.github.io/ALEX-casino-public/',
-	},
-	{
-		name: 'Hlegal',
-		img: hlegal,
-		description: 'Hlegal web-site project',
-		tags: ['HTML', 'SCSS', 'JavaScript'],
-		code: 'https://github.com/Ashot0/hlegal',
-		live: 'https://ashot0.github.io/hlegal/',
-	},
+	// {
+	// 	name: 'Waste-Processing',
+	// 	img: wasteProcessing,
+	// 	description: 'Website about the importance of recycling',
+	// 	tags: ['HTML', 'SCSS', 'JavaScript', 'BEM', 'Swiper.js'],
+	// 	code: 'https://github.com/Ashot0/Waste-Processing',
+	// 	live: 'https://ashot0.github.io/Waste-Processing/#',
+	// },
+	// {
+	// 	name: 'ALEX-casino',
+	// 	img: alexCasino,
+	// 	description: 'Landing-page casino',
+	// 	tags: ['React', 'Framer Motion', 'React-spring', 'BEM', 'Swiper.js'],
+	// 	code: 'https://github.com/Ashot0/ALEX-casino',
+	// 	live: 'https://ashot0.github.io/ALEX-casino-public/',
+	// },
+	// {
+	// 	name: 'dZENcode',
+	// 	img: dzencode,
+	// 	description: 'CRM inventory-page (Desktop only)',
+	// 	tags: ['Vue', 'TypeScript', 'SCSS', 'VueX', 'Websocket'],
+	// 	code: 'https://github.com/Ashot0/dZENcode/tree/main',
+	// 	live: 'https://ashot0.github.io/dZENcode-gitpages/',
+	// },
+	// {
+	// 	name: 'Hlegal',
+	// 	img: hlegal,
+	// 	description: 'Hlegal web-site project',
+	// 	tags: ['HTML', 'SCSS', 'JavaScript'],
+	// 	code: 'https://github.com/Ashot0/hlegal',
+	// 	live: 'https://ashot0.github.io/hlegal/',
+	// },
 	{
 		name: 'Tobto',
 		img: tobto,
@@ -86,11 +98,36 @@ const projects = [
 		live: 'https://ashot0.github.io/Danganronpa-public/#/',
 	},
 	{
+		name: 'Weather',
+		img: weather,
+		description: 'Weather web-app',
+		tags: ['Vue', 'SCSS', 'VueX'],
+		code: 'https://github.com/Ashot0/Weather-code',
+		live: 'https://ashot0.github.io/Weather/#/',
+	},
+	{
 		name: 'Tribal Club',
 		img: tribalClub,
 		description: 'Website for Tribal Club',
 		tags: ['Vue', 'GSAP', 'VueX', 'SCSS', 'Axios'],
+		code: 'https://github.com/Ashot0/Tribal-club',
 		live: 'https://tribalclub.newtribe.nl/#/',
+	},
+	{
+		name: 'Het-Haartheter-Support',
+		img: HetHaartheter,
+		description: 'Het-Haartheter support',
+		tags: ['NUXT'],
+		code: 'https://github.com/Ashot0/haartheter-support',
+		live: 'https://dev-haartheter-support.x-tribal.com/',
+	},
+	{
+		name: 'Chuttyevo',
+		img: Chuttyevo,
+		description:
+			'I participated in the development of the application as a front-end developer, including both the online store and its admin panel.',
+		tags: ['NUXT', 'Pinia', 'Tailwind'],
+		live: 'https://chuttyevo.com.ua/',
 	},
 	{
 		name: 'Portfolio',

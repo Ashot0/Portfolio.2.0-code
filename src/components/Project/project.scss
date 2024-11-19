@@ -82,8 +82,14 @@
 		&_vue {
 			color: #08c481ff;
 		}
+		&_nuxt {
+			color: #08c481ff;
+		}
 		&_vuex {
 			color: #394e62ff;
+		}
+		&_websocket {
+			color: #60abf6ff;
 		}
 		&_framermotion {
 			color: #ee0bbdff;
@@ -97,6 +103,12 @@
 		}
 		&_threejs {
 			color: #080808ff;
+		}
+		&_pinia {
+			color: #ffd24dff;
+		}
+		&_tailwind {
+			color: #35bcf8ff;
 		}
 	}
 	&__btn-box {
