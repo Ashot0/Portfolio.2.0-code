@@ -13,6 +13,7 @@ import HetHaartheter from '@/assets/Projects/HetHaartheater.jpg';
 import dzencode from '@/assets/Projects/dzencode.jpg';
 import weather from '@/assets/Projects/weather.jpg';
 import Chuttyevo from '@/assets/Projects/chuttevo.jpg';
+import dashboard from '@/assets/Projects/dashboard.jpg';
 
 const projects = [
 	// {
@@ -23,14 +24,14 @@ const projects = [
 	// 	code: 'https://github.com/Ashot0/Blockchain-site',
 	// 	live: 'https://ashot0.github.io/Blockchain-site/',
 	// },
-	{
-		name: 'NUOP student union',
-		img: profcom,
-		description: 'Website for NUOP Student Union',
-		tags: ['HTML', 'SCSS', 'JavaScript'],
-		code: 'https://github.com/Ashot0/profcom',
-		live: 'https://ashot0.github.io/profcom/',
-	},
+	// {
+	// 	name: 'NUOP student union',
+	// 	img: profcom,
+	// 	description: 'Website for NUOP Student Union',
+	// 	tags: ['HTML', 'SCSS', 'JavaScript'],
+	// 	code: 'https://github.com/Ashot0/profcom',
+	// 	live: 'https://ashot0.github.io/profcom/',
+	// },
 	// {
 	// 	name: 'Waste-Processing',
 	// 	img: wasteProcessing,
@@ -128,6 +129,14 @@ const projects = [
 			'I participated in the development of the application as a front-end developer, including both the online store and its admin panel.',
 		tags: ['NUXT', 'Pinia', 'Tailwind'],
 		live: 'https://chuttyevo.com.ua/',
+	},
+	{
+		name: 'Dashboard',
+		img: dashboard,
+		description: 'Dashboard-page',
+		tags: ['NUXT', 'Three.js', 'GSAP', 'Pinia', 'TypeScript'],
+		code: 'https://github.com/Ashot0/Dashboard',
+		live: 'https://dashboard-lake-kappa.vercel.app/',
 	},
 	{
 		name: 'Portfolio',
