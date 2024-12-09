@@ -56,14 +56,14 @@ const projects = [
 	// 	code: 'https://github.com/Ashot0/dZENcode/tree/main',
 	// 	live: 'https://ashot0.github.io/dZENcode-gitpages/',
 	// },
-	// {
-	// 	name: 'Hlegal',
-	// 	img: hlegal,
-	// 	description: 'Hlegal web-site project',
-	// 	tags: ['HTML', 'SCSS', 'JavaScript'],
-	// 	code: 'https://github.com/Ashot0/hlegal',
-	// 	live: 'https://ashot0.github.io/hlegal/',
-	// },
+	{
+		name: 'Hlegal',
+		img: hlegal,
+		description: 'Hlegal web-site project',
+		tags: ['HTML', 'SCSS', 'JavaScript'],
+		code: 'https://github.com/Ashot0/hlegal',
+		live: 'https://ashot0.github.io/hlegal/',
+	},
 	{
 		name: 'Tobto',
 		img: tobto,
@@ -72,15 +72,15 @@ const projects = [
 		tags: ['React', 'Vite', 'SCSS', 'Zustand'],
 		live: 'https://dev.tobto.io/uk/sign-in',
 	},
-	{
-		name: 'Dom',
-		img: dom,
-		description:
-			'Limited Liability Company (LLC) Property Management "Dom" A project utilizing an external CDN for image management and delivery. All images are hosted on Imgur.',
-		tags: ['React', 'BEM', 'Swiper.js', 'SCSS', 'CDN'],
-		code: 'https://github.com/Ashot0/Dom-code',
-		live: 'https://ashot0.github.io/Dom/',
-	},
+	// {
+	// 	name: 'Dom',
+	// 	img: dom,
+	// 	description:
+	// 		'Limited Liability Company (LLC) Property Management "Dom" A project utilizing an external CDN for image management and delivery. All images are hosted on Imgur.',
+	// 	tags: ['React', 'BEM', 'Swiper.js', 'SCSS', 'CDN'],
+	// 	code: 'https://github.com/Ashot0/Dom-code',
+	// 	live: 'https://ashot0.github.io/Dom/',
+	// },
 	{
 		name: 'Bar Mitzvah',
 		img: barMitzvah,
