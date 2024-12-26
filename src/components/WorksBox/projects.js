@@ -120,7 +120,7 @@ const projects = [
 		description: 'Het-Haartheter support',
 		tags: ['NUXT'],
 		code: 'https://github.com/Ashot0/haartheter-support',
-		live: 'https://dev-haartheter-support.x-tribal.com/',
+		live: 'https://haartheter-support.vercel.app/',
 	},
 	{
 		name: 'Chuttyevo',
