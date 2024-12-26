@@ -112,7 +112,8 @@ const projects = [
 		description: 'Website for Tribal Club',
 		tags: ['Vue', 'GSAP', 'VueX', 'SCSS', 'Axios'],
 		code: 'https://github.com/Ashot0/Tribal-club',
-		live: 'https://tribalclub.newtribe.nl/#/',
+		live: 'https://tribal-club.vercel.app/#/',
+		// live: 'https://tribalclub.newtribe.nl/#/',
 	},
 	{
 		name: 'Het-Haartheter-Support',
