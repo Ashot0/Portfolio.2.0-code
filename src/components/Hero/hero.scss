@@ -8,6 +8,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
 	&__bg-rotate {
 		max-width: 130vh;
 		position: absolute;
@@ -15,6 +16,7 @@
 		top: 0%;
 		transform: translate(0%, -50%);
 	}
+
 	&__header {
 		position: absolute;
 		top: 5vh;
@@ -24,6 +26,7 @@
 		opacity: 0.6;
 		filter: drop-shadow(0px 0px 4px #75c768ff);
 	}
+
 	&__parallax {
 		overflow: hidden;
 		top: 0;
@@ -45,6 +48,7 @@
 
 .parallax {
 	position: relative;
+
 	&__wrapper {
 		pointer-events: none;
 		display: flex;
@@ -55,6 +59,7 @@
 		width: 100vw;
 		position: absolute;
 	}
+
 	&__img {
 		position: absolute;
 		max-width: 90%;
@@ -63,6 +68,7 @@
 		transform: translate(-50%, -50%);
 		opacity: 0.7;
 	}
+
 	&__text-block {
 		position: absolute;
 		width: 100%;
@@ -74,19 +80,23 @@
 		flex-direction: column;
 		gap: 5vh;
 	}
+
 	&__text {
 		font-size: 7rem;
 		height: 120px;
 		overflow: hidden;
+
 		&_1 {
 			position: relative;
 			top: 0%;
 			left: calc(50vw - 450px);
 		}
+
 		&_2 {
 			position: relative;
 			left: calc(50vw - 575px);
 		}
+
 		&_3 {
 			position: relative;
 			left: calc(50vw - 150px);
@@ -97,29 +107,36 @@
 @media (orientation: portrait) {
 	.hero {
 		height: 120vh;
+
 		&__header {
 			position: absolute;
 			top: 5vh;
 			left: 2vw;
 			width: 10vh;
 		}
+
 	}
 }
+
 @media (max-width: 1120px) {
 	.parallax {
 		&__text-block {
 			gap: 3%;
 		}
+
 		&__text {
 			height: 10vw;
 			flex-direction: column;
 			font-size: 10vw;
+
 			&_1 {
 				left: 10vw;
 			}
+
 			&_2 {
 				left: 17vw;
 			}
+
 			&_3 {
 				left: 19vw;
 			}

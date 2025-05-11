@@ -30,7 +30,7 @@ export default {
 			const baseRotateX = -90;               // start X
 			const baseRotateY = 360;               // start Y
 			const baseRotateZ = -90;               // start Z
-			const orbitBaseAngle = 230;            // base angle for orbital animations
+			const orbitBaseAngle = 233;            // base angle for orbital animations
 			const orbitAngleStep = 36;             // angle step between objects
 			const orbitRotationAmount = 595;       // how many degrees extra to rotate
 			const orbitDuration = 120;             // duration of one circle

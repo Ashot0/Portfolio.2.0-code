@@ -74,6 +74,14 @@
 	}
 }
 
+@media (orientation: portrait) and (max-width: 480px) and (min-height: 920px) {
+	.works {
+		&__sticky {
+			height: 90vh;
+		}
+	}
+}
+
 @media (orientation: portrait) and (min-height: 740px) {
 	.works {
 		&__sticky {

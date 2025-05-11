@@ -9,6 +9,8 @@
 			<span class="technologies__element technologies__element_ts">
 				TypeScript
 			</span>
+		</p>
+		<p class="technologies__list technologies__list_2">
 			<span class="technologies__element technologies__element_gsap">GSAP</span>
 			<span class="technologies__element technologies__element_laravel">Laravel(Blade)</span>
 		</p>
