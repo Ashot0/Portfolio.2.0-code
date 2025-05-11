@@ -4,6 +4,7 @@
 	position: relative;
 	width: 100vw;
 	height: 457vh;
+
 	&__sticky {
 		top: -20vh;
 		position: sticky;
@@ -11,7 +12,9 @@
 		height: 125vh;
 		padding: 20vh 0;
 		overflow: hidden;
+
 	}
+
 	&__wrapper {
 		z-index: 90;
 		position: relative;
@@ -20,6 +23,7 @@
 		transform-style: preserve-3d;
 		transform: rotateX(75deg);
 	}
+
 	&__sun {
 		position: absolute;
 		border-radius: 50%;
@@ -35,6 +39,7 @@
 		box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
 		transform: rotateX(-90deg);
 	}
+
 	&__orbit {
 		position: absolute;
 		border-radius: 50%;
@@ -46,6 +51,7 @@
 		margin-top: -30em;
 		margin-left: -12em;
 	}
+
 	&__project {
 		transform-style: preserve-3d;
 		transform: translate(0, -50%);
@@ -55,29 +61,35 @@
 		top: 50%;
 	}
 }
+
 @media (orientation: portrait) and (max-height: 1340px) {
 	.works {
 		&__project {
 			margin-left: -15vh;
 		}
+
 		&__sun {
 			font-size: 20em;
 		}
 	}
 }
+
 @media (orientation: portrait) and (min-height: 740px) {
 	.works {
 		&__sticky {
 			padding: 0;
+			top: 0vh;
 		}
 	}
 }
+
 @media (max-height: 520px) {
 	.works {
 		margin-top: 50vh;
 		margin-bottom: 100vh;
 	}
 }
+
 @media (min-width: 1720px) {
 	.works {
 		&__sticky {
@@ -86,12 +98,15 @@
 			height: 180vh;
 			margin-bottom: -30vh;
 		}
+
 		&__project {
 			margin-left: 25vh;
 		}
+
 		&__orbit {
 			margin-top: -50em;
 		}
+
 		&__sun {
 			font-size: 35em;
 		}

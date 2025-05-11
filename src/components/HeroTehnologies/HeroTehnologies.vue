@@ -4,15 +4,13 @@
 			<p class="technologies__header">I work with technologies:</p>
 		</div>
 		<p class="technologies__list">
-			<span class="technologies__element technologies__element_vue3">Vue</span>
-			<span class="technologies__element technologies__element_react"
-				>React</span
-			>
+			<span class="technologies__element technologies__element_vue3">Vue/NUXT</span>
+			<span class="technologies__element technologies__element_react">React</span>
 			<span class="technologies__element technologies__element_ts">
 				TypeScript
 			</span>
 			<span class="technologies__element technologies__element_gsap">GSAP</span>
-			<span class="technologies__element technologies__element_scss">SCSS</span>
+			<span class="technologies__element technologies__element_laravel">Laravel(Blade)</span>
 		</p>
 	</div>
 </template>

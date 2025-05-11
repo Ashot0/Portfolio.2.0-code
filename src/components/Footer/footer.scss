@@ -12,6 +12,12 @@
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 200px;
+
+	@media (max-width:680px) {
+		padding-top: 0;
+
+	}
+
 	&__wrapper {
 		position: relative;
 		width: 100vw;
@@ -19,9 +25,11 @@
 		flex-direction: column;
 		gap: 5vh;
 	}
+
 	&__solar-system {
 		position: absolute;
 	}
+
 	&__text-container {
 		text-wrap: nowrap;
 		opacity: 0;
@@ -30,22 +38,26 @@
 		font-family: "Merriweather", serif;
 		font-style: normal;
 		position: relative;
+
 		&_1 {
 			width: 531.56px;
 			left: 50vw;
 			transform: translate(-50%);
 		}
+
 		&_2 {
 			width: 229.05px;
 			left: calc(50vw + 6px);
 			transform: translate(-50%);
 		}
+
 		&_3 {
 			width: 304.31px;
 			left: 50vw;
 			transform: translate(-50%);
 		}
 	}
+
 	&__text {
 		display: block;
 		height: 130px;
@@ -55,32 +67,40 @@
 		text-align: center;
 		bottom: 0;
 		left: 0;
+
 		&_pc {
 			display: inline;
 		}
+
 		&_phone {
 			display: none;
 		}
 	}
 }
+
 @media (orientation: portrait) {
 	.footer {
 		padding-bottom: 0;
+
 		&__wrapper {
 			gap: 0%;
 		}
+
 		&__text-container {
 			width: 100%;
 		}
+
 		&__text {
 			top: 0;
 			text-align: center;
 			font-size: 10vw;
 			transform: translate(-50%);
 			left: 50vw;
+
 			&_pc {
 				display: none;
 			}
+
 			&_phone {
 				display: inline;
 			}

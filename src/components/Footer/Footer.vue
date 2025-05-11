@@ -7,8 +7,7 @@
 			</div>
 			<div class="footer__text-container footer__text-container_2">
 				<h2 class="footer__text">
-					F<span class="footer__text_pc">   </span
-					><span class="footer__text_phone">O</span>R
+					F<span class="footer__text_pc">   </span><span class="footer__text_phone">O</span>R
 				</h2>
 			</div>
 			<div class="footer__text-container footer__text-container_3">
